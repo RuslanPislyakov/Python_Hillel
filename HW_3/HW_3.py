@@ -1,9 +1,11 @@
 digit = int(input('5-digit number '))
 
-a = str(digit % 10)
-b = str(digit % 100 // 10)
-c = str(digit % 1000 // 100)
-d = str(digit % 10000 // 1000)
-e = str(digit % 100000 // 10000)
+a = digit % 10
+b = digit % 100 // 10
+c = digit % 1000 // 100
+d = digit % 10000 // 1000
+e = digit % 100000 // 10000
 
-print(a + b + c + d + e)
+result = a * 10000 + b * 1000 + c * 100 + d * 10 + e
+
+print(result)
