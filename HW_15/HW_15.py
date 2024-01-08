@@ -7,7 +7,7 @@ minutes, seconds = divmod(seconds, 60)
 if 11 <= days <= 14:
     day_print_form = 'днів'
 elif 2 <= days % 10 <= 4:
-    day_print_form = 'дні'Added different day string forms depending on the day amount
+    day_print_form = 'дні'
 elif days % 10 == 1:
     day_print_form = 'день'
 else:
