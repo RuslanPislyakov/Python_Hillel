@@ -4,8 +4,8 @@ def find_unique_value(lst):
     for el in temp_set:
         if lst.count(el) == 1:
             return el
-        else:
-            return None
+
+    return None
 
 
 assert find_unique_value([1, 2, 1, 1]) == 2, 'Test1'
