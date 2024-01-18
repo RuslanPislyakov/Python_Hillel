@@ -1,6 +1,7 @@
 def popular_words(text, words):
-    text = text.lower()
-    text_lst = text.split()
+
+    text_lst = text.lower().split()
+
     res_dict = dict.fromkeys(words, 0)
     for word in text_lst:
         if word in res_dict:
